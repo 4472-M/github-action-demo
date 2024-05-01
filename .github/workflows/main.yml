@@ -14,6 +14,55 @@ jobs:
           ref: refs/heads/main
 
 
+- name: Setup SSH for EC2
+  # You may pin to the exact commit or the version.
+  # uses: omarhosny206/setup-ssh-for-ec2@b5a5125e2fcef543794d4209f69df63675531eaf
+  uses: omarhosny206/setup-ssh-for-ec2@v1.0.0
+  with:
+    # The private key of EC2 instance for SSH connection
+    EC2_SSH_PRIVATE_KEY:
+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
+ZS5pbnRlcm5hbAEC
+    # The URL of the EC2 instance
+    EC2_URL: 
+        
+
       - name: deployment 
         run: |
           scp index.html test@13.201.12.23:/var/www/html
+          
